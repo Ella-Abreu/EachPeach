@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Tracker</title>
+
+
+    <!--fonts:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+   
+
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/30187da048.js" crossorigin="anonymous"></script>
+    
+
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    </head>  
+
+    <!--JavaScript-->
+    <script src="./app.js"></script>
+
+    <body>
+<div id="root">
+    <!--Nav bar start-->
+    <header>
+        <nav>
+            <ul>
+                <li id="home-icon"><i  class="fa-solid fa-house"></i></li>
+                <li class="hide">Fitness Log</li>
+                <li><img id="logo-image" src="./Images/Logo.png" alt="A peach on a slate background"></li>
+                <li class="hide">Blog</li>
+                <li id="menu-icon"><i class="fa-solid fa-bars"></i></li>
+            </ul> 
+        </nav>
+    </header>
+    <!--Nav bar end-->
+
+    <main>
+        <!--Wellness Log Intro start-->
+       <section>
+            <h2 class="section-title"> <img class="words" src ="./Images/eachpeachwordsyellow.png" alt="Each Peach"> Wellness Tracker...</h2>
+            <div class="wellness-tracker-intro">
+                <div class="intro-image-container">
+                    <img id="intro-image" src ="./Images/intro-plane.png" alt="">
+                </div>        
+                <div class="intro-bio">
+                    <p> It's just peachy to see you here at our <b>Wellness Tracker</b> page. This is where the journey to better health, improved wellbeing, and financial security begins.</p>
+
+                    <p> You can use the template below to make a record of your daily goals and achievements in each key section:</p>
+
+                    <ul id="intro-list">
+                        <li>Physical health</li>
+                        <li>Mental health</li>
+                        <li>Financial health</li>
+                    </ul>
+                </div>
+                <div class="intro-image-container">
+                    <img id="intro-image" src ="./Images/intro-peach.png" alt="">
+                </div> 
+            </div>
+        </section>
+        <!--Intro end-->
+    
+
+        <!--Physical Health Log start-->
+        <section>
+            <h2 class="section-title"> Physical Health...</h2>
+            <div id="phys-health-container">
+                <h3 class="section-subtitle">B.M.I Calculator</h3>
+                
+                <div class="bmi-calculator">
+                    <p>Input your weight and height below to find out your BMI.</p>
+                    <div class="row">
+                        <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+                        <span id="weight-val">20 kg</span>
+                    </div>
+
+                    <div class="row">
+                        <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+                        <span id="height-val">100 cm</span>
+                    </div>
+                    <div>
+                        <p id="result">20.0</p>
+                        <p id="category">Healthy Weight</p>
+                    </div>  
+
+                </div>
+            </div>
+            <article>
+                 
+            </article>
+            
+        </section>
+        <!--Physical Health Log end-->
+
+        <!--Footer start-->
+        <section>
+            <footer>
+                <div class="social-icon-container">
+                    <i id="social-icon" class="fa-solid fa-at"></i>
+                    <i id="social-icon" class="fa-brands fa-instagram"></i>
+                    <i id="social-icon" class="fa-brands fa-tiktok"></i>
+                    <i id="social-icon" class="fa-brands fa-youtube"></i>
+                </div>
+            </footer>
+        </section>
+    
+        <!--Footer end-->
+
+    </main>
+</div>
+</body>
+</html>
